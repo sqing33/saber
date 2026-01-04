@@ -27,10 +27,10 @@ const App: React.FC = () => {
       <Header onGoHome={handleGoHome} />
       
       {/* 
-         Added pt-[180px] to main container:
-         120px (Initial Header Height) + 30px (Top Margin) + 30px (Visual Gap) 
+         Pushed content down significantly to accommodate the Hero Header 
+         380px (Header) + 30px (Top Margin) + 40px (Gap) = ~450px
       */}
-      <main className="flex-1 max-w-7xl mx-auto px-6 w-full pt-[180px] pb-12 transition-all duration-500">
+      <main className="flex-1 max-w-7xl mx-auto px-6 w-full pt-[450px] pb-12 transition-all duration-500">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
             {/* Left Column: Main Content (8 cols = ~66%) */}
